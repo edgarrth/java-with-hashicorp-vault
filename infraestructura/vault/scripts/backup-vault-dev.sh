@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/sh
+set -eu
 # Dev-mode sample backup: export important lab configuration as JSON.
 # In production use storage snapshots according to the selected Vault backend.
 export VAULT_ADDR=${VAULT_ADDR:-http://127.0.0.1:8200}

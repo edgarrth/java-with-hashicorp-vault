@@ -46,20 +46,21 @@ src/main/resources/
 cd infraestructura
 docker compose up -d
 
+docker compose ps
+
 docker exec -it vault-poc sh /vault/scripts/setup-vault.sh
 ```
 
 Obtén el token de aplicación:
 
 ```bash
-docker exec vault-poc cat /vault/payment-service.token
+docker exec vault-poc cat /vault/file/payment-service.token
 ```
 
-## Ejecutar en IntelliJ IDEA
+## Ejecutar
 
-1. Importa el proyecto como Maven.
-2. Usa JDK 25.
-3. Configura variables de entorno:
+
+Configura variables de entorno:
 
 ```bash
 VAULT_ADDR=http://localhost:8200
