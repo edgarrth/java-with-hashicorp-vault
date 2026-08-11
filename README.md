@@ -118,6 +118,7 @@ POST /security/v1/vault-labs/pki/certificates
 
 Los requests de ejemplo están en `infraestructura/requests` y pueden abrirse desde IntelliJ IDEA o VS Code REST Client.
 
-## Notas de seguridad
+## Notas
 
-Esta PoC usa Vault en modo dev para laboratorio. En producción no usar token root, habilitar TLS real, storage persistente/HA, rotación de tokens, unseal seguro, namespaces/paths por dominio, monitoreo de auditoría y backups del backend de storage.
+Esta PoC usa Vault en modo dev para laboratorio. 
+En producción no usar token root, habilitar TLS, storage persistente/HA, rotación de tokens, unseal seguro, namespaces/paths por dominio.e.
